@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Page with shadow</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *
+    {
+        box-sizing: border-box;
+        
+    }
+    
+ body
+    {
+    
+     font-family: Verdana;
+     margin: 0;
+    }
+    
+    .header{
+        background-image: url(red.jpeg);
+        background-attachment: fixed;
+        text-align: center;
+        color: white;
+        background-color: #25aef7;
+        padding: 50px;
+    }
+    
+    .menubar{
+         
+        overflow: hidden;
+        background-color: #135495;        
+    }
+    
+    .menubar a{
+        float : left;
+        padding:15px 20px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    .menubar a.right
+    {
+        float:right;    
+    }
+    
+    .menubar a:hover{
+        box-shadow: -1px 6px 20px 10px red;
+        background-color: aliceblue;
+        color: black;
+        
+    }
+    
+    
+    .fimg{
+        background-image: url(fakeimg.jpeg);
+        
+        box-shadow: 1px 1px 20px 2px red;
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        
+        width: 100%;
+        color: white;
+        padding: 20px;
+    }
+    
+    .content
+        {
+            background-image: url(red.jpeg);
+            display: flex;
+            flex-wrap: wrap;
+    }
+    /*
+    *optional
+    
+     for content    display: -ms-flexbox;
+     for content    -ms-flex-wrap:wrap;
+            
+     sidebar and main -ms-flex: 20%;
+        
+    */
+    
+    .sidebar{
+        background-image: url(blue.jpeg);
+        background-attachment: fixed;
+        
+        flex: 20%;
+        padding: 20px;
+        background-color: aqua;
+        color: black;
+    }
+    
+    .main{
+         
+       background-image: url(blue.jpeg);
+        background-attachment: fixed;
+        
+        flex: 80%;
+        background-color: aquamarine;
+        padding: 20px;
+        color: black;
+    }
+    .footer
+    {
+        text-align: center; 
+        background-color: cornflowerblue;
+        overflow:hidden;  
+    }
+    
+</style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1  style=" text-shadow: 1px 2px 6px black">Welcome to My Web</h1>
+        <p> A Website created by Tushar Darekar</p>
+    </div>
+    
+    <div class="menubar">
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+        <a href="#" class="right">Link4</a>
+    </div>
+
+<div class="content">
+    
+    <div class="sidebar">
+        <h2>About Me</h2>
+        <h5>My project description</h5>
+        <div Class="fimg" style="height: 200px;"></div>
+        <p>Some text about me..</p>
+        <h3>More Text</h3>
+        <p>Some more link and images.</p>
+        <div class="fimg" style="height:60px;">Image</div><br>
+        <div class="fimg" style="height:60px;">Image</div><br>
+        <div class="fimg" style="height:60px;">Image</div>
+         <h2>Contact Me</h2>
+        <h5>My Details:</h5>
+        <h6>86988339667<br>tushardarekar@gmail.com</h6>
+        
+    </div>
+    
+    <div class="main" >
+        <h2>About Me</h2>
+        <h5>My project description</h5>
+        <div Class="fimg" style="height: 200px;"></div>
+       <h2>More about Me</h2>
+        <h5>My project Title</h5>
+        <div Class="fimg" style="height: 200px;"></div>
+       <h2>About Me</h2>
+        <h5>My project Information</h5>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div Class="fimg" style="height: 200px;"></div>
+    
+    </div>
+    
+    
+</div>
+
+    <div class="footer" style="">
+        <h5>This is footer</h5>
+        <h3>About Me</h3>
+        <p>Copyright<sup>&copy;</sup> Tushar Darekar </p>
+    </div>    
+    
+</body>
+</html>
